@@ -1,0 +1,18 @@
+public class EjercicioAutomovil {
+    public EjercicioAutomovil() {
+    }
+
+    public static void main(String[] args) {
+        Automovil toyota = new Automovil("toyota", "fortune", "gris", 3.5);
+        Automovil kia = new Automovil("kia", "Sportage", "gris", 4.0);
+        Automovil bmw = new Automovil("bmw", "bmw x6 m", "Azul", 5.0);
+        toyota.detalles();
+        kia.detalles();
+        bmw.detalles();
+        System.out.println(toyota.detalles());
+        System.out.println(toyota.aceleracion(5000));
+        System.out.println(toyota.frenar());
+        System.out.println(toyota.consumocombustible(60.0F, 23.0F));
+        System.out.println(toyota.consumocombustible(60, 23));
+    }
+}
